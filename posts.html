@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en"> 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Hajiyev Toghrul">
+  <title>Blogen Posts</title>
+  <script src="https://kit.fontawesome.com/e6b12f766c.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <body>
+    
+    <!-- Navbar & Logo -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark p-0">
+      <div class="container">
+        <a href="index.html" class="navbar-brand">Blogen</a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="navbar-collapse" class="collapse navbar-collapse">
+          <ul class="navbar-nav mr-right">
+            <li class="nav-item">
+              <a class="nav-link pr-3" href="index.html">Dashboard</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link pr-3 active" href="posts.html">Posts</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link pr-3" href="categories.html">Categories</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="users.html">Users</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav ml-auto">
+            <li class="dropdown nav-item mr-3">
+              <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
+                <i class="fas fa-user"></i> Welcome Toghrul
+              </a>
+              <div class="dropdown-menu">
+                <a href="profile.html" class="dropdown-item">
+                  <i class="fas fa-user-circle"></i> Profile
+                </a>
+                <a href="settings.html" class="dropdown-item">
+                  <i class="fas fa-cog"></i> Settings
+                </a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a href="login.html" class="nav-link"><i class="fas fa-user-times"></i> Logout</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Search Bar Section -->
+    <section id="search-bar" class="bg-light py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 ml-auto">
+          <div class="input-group">
+          <input type="text" class="form-control" placeholder="Search Posts...">
+          <div class="input-group-append">
+            <input type="button" class="btn btn-primary" value="Search">
+          </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Header Section -->
+    <header id="header" class="bg-primary py-2 text-white">
+      <div class="container">
+        <h1>
+          <i class="fas fa-pencil-alt"></i> Posts
+        </h1>
+      </div>
+    </header>
+
+    <!-- Posts Section -->
+    <section id="posts" class="py-4">
+      <div class="container">
+        <div class="card">
+          <div class="card-header">
+            <h4>Latest Posts</h4>
+          </div>
+          <div class="table-responsive">
+            <table class="table table-striped">
+              <thead class="thead-dark">
+                <tr>
+                  <th>#</th>
+                  <th>Title</th>
+                  <th>Category</th>
+                  <th>Date</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Post One</td>
+                  <td>Web Development</td>
+                  <td>February 10, 2020</td>
+                  <td><a href="details.html" class="btn btn-secondary"><i class="fas fa-angle-double-right"></i> Details</a></td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Post Two</td>
+                  <td>Tech Gadgets</td>
+                  <td>February 11, 2020</td>
+                  <td><a href="details.html" class="btn btn-secondary"><i class="fas fa-angle-double-right"></i> Details</a></td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Post Three</td>
+                  <td>Web Development</td>
+                  <td>February 13, 2020</td>
+                  <td><a href="details.html" class="btn btn-secondary"><i class="fas fa-angle-double-right"></i> Details</a></td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>Post Four</td>
+                  <td>Business</td>
+                  <td>February 15, 2020</td>
+                  <td><a href="details.html" class="btn btn-secondary"><i class="fas fa-angle-double-right"></i> Details</a></td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>Post Five</td>
+                  <td>Web Development</td>
+                  <td>February 17, 2020</td>
+                  <td><a href="details.html" class="btn btn-secondary"><i class="fas fa-angle-double-right"></i> Details</a></td>
+                </tr>
+                <tr>
+                  <td>6</td>
+                  <td>Post Six</td>
+                  <td>HHealth & Wellness</td>
+                  <td>February 20, 2020</td>
+                  <td><a href="details.html" class="btn btn-secondary"><i class="fas fa-angle-double-right"></i> Details</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+            <!-- Pagination -->
+            <div class="pagination ml-4 mb-3">
+              <li class="page-item disabled">
+                <a href="#" class="page-link">Previous</a>
+              </li>
+              <li class="page-item active">
+                <a href="#" class="page-link">1</a>
+              </li>
+              <li class="page-item">
+                <a href="#" class="page-link">2</a>
+              </li>
+              <li class="page-item">
+                <a href="#" class="page-link">3</a>
+              </li>
+              <li class="page-item">
+                <a href="#" class="page-link">Next</a>
+              </li>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="py-4 bg-dark text-white text-center">
+      <p class="lead">Copyright &copy; <span id="year"></span> Blogen</p>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Bootstrap Scripts Start -->
+
+    <script src="http://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJof+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap Scripts End -->
+
+    <!-- My Scripts -->
+
+    <script>
+      // Get the current year for the copyright
+      $("#year").text(new Date().getFullYear());
+    </script>
+  </body>
+</html>
